@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Food Ordering Website
+        </title>
+        <link rel="stylesheet" type="text/css" href="food.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Foodie Palace</h1>
+        <nav>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#cart">Cart </a>
+                <a href="#about">About</a>
+                <a href="#con">Contact Us</a>
+            </ul>
+        </nav>
+        
+        <section id="home" class="items">
+            <div class="item">
+                <img src="Burger1.jpeg" alt="Burger" >
+                <h3>Burger</h3>
+                <h4>Our classic cheeseburger is made with a juicy, all-chicken patty cooked to perfection and topped with melted American cheese, crisp lettuce, ripe tomato, and sliced onion. Served on a freshly baked brioche bun and finished with our signature special sauce, this burger is a timeless favorite that never disappoints. Upgrade your order with a side of crispy fries or a refreshing drink for the ultimate meal. </h4>
+               
+            </div>
+            <div class="item">
+                <img src="Pizza1.jpeg" alt="Pizza" >
+                <h3>Pizza</h3>
+                <h4>Our Margherita pizza is a classic Neapolitan-style pizza that is a true masterpiece. Made with the finest San Marzano tomatoes, fresh mozzarella cheese, and a sprinkle of aromatic basil, this pizza is a true representation of Italian culinary tradition. The crust is thin and crispy, with a slight char on the edges, and the toppings are perfectly balanced to create a harmony of flavors. Whether you're a pizza purist or simply looking for a delicious and satisfying meal, our Margherita pizza is sure to hit the spot. Add your favorite toppings for a personalized touch or enjoy it as is for a true taste of Italy. </h4>
+               
+            </div>
+            <div class="item">
+                <img src="pasta.jpeg" alt="Pasta" >
+                <h3 >Pasta</h3>
+                <h4>Our Spaghetti Carbonara is a creamy and savory dish that will transport your taste buds straight to Italy. Made with al dente spaghetti, crispy bacon, Parmesan cheese, and a rich egg yolk sauce, this pasta is a true indulgence. The sauce is cooked to perfection, with just the right balance of creaminess and saltiness, and the bacon adds a delicious crunch and smoky flavor to the dish. Served with a side of garlic bread and a fresh salad, this pasta is the ultimate comfort food that will leave you feeling satisfied and happy. Perfect for a romantic dinner or a night out with friends, our Spaghetti Carbonara is a must-try.</h4>
+               
+            </div>
+            <div class="item">
+                <img src="garlic.jpeg" alt="Garlic Bread" >
+                <h3>Garlic Bread</h3>
+                <h4>Our Garlic Bread is a warm and crispy delight that will tantalize your taste buds. Made with freshly baked bread, butter, garlic, and a sprinkle of herbs, this bread is the perfect accompaniment to any meal. The bread is baked to perfection, with a golden crust that gives way to a soft and fluffy interior. The garlic and herb toppings add a burst of flavor that will make you want to savor every bite. Served hot and fresh, our Garlic Bread is the ideal starter or side dish that will leave you wanting more. Perfect for sharing with friends or enjoying on your own, this bread is a true crowd-pleaser that you won't be able to resist.</h4>
+            
+            </div>
+            <div class="item">
+                <img src="fries1.jpeg" alt="Fries" >
+                <h3>French Fries</h3>
+                <h4>Our Crispy French Fries are the ultimate side dish that will make your meal complete. Made with premium Idaho potatoes, cut into perfect shoestring slices, and fried to a golden brown perfection, these fries are crispy on the outside and tender on the inside. The seasoning is just right, with a perfect blend of salt and spices that will make your taste buds dance with joy. Served in a generous portion, our Crispy French Fries are perfect for sharing with friends or enjoying on your own. Whether you're in the mood for a quick snack or a satisfying side dish, these fries will hit the spot. Add them to any burger or sandwich for the ultimate meal, or enjoy them on their own for a delicious treat.</h4>
+            </div>
+
+        </section>
+        <div id="cart" class="header">
+            <p class="logo">LOGO</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h3 id="total">Rs 0</h3>
+                    <button onclick="Myfunction()">Place Order</button>
+                    <script>
+                        function Myfunction(){
+                            alert("Your Order has been placed");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    <h2 id="about">About Us</h2>
+    <p>Welcome to our food ordering website! <br>
+
+        We are a team of food enthusiasts who are passionate about delivering the best culinary experience to our customers. Our mission is to provide high-quality food, exceptional service, and a convenient online ordering platform that makes it easy for you to enjoy your favorite meals from the comfort of your own home. <br>
+        
+        Our menu features a wide selection of dishes that are made with fresh and locally sourced ingredients, and are prepared with care by our experienced chefs. We offer a range of cuisines, from classic American burgers and fries to authentic Italian pasta and pizza, as well as vegetarian and vegan options for those with dietary restrictions. <br>
+        
+        At our restaurant, we believe that food is not just about sustenance, but also about creating memories and bringing people together. That's why we strive to create a welcoming and inclusive atmosphere where everyone can feel at home. Whether you're dining with family, catching up with friends, or ordering takeout for a cozy night in, we are here to make your experience unforgettable. <br>
+        
+        Thank you for choosing us as your go-to food ordering destination. We look forward to serving you soon!</p>
+
+    <h2>Contact Us</h2>
+
+        <div id="con" class="containers">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+
+            <label for="Query">Query</label>
+            <textarea id="query" name="Query" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+          
+        <FOOter>
+            <p style="text-align: center;">Copyright © Foodie Palace</p>
+        </FOOter>
+
+        
+        <script src="cart.js"></script>
+                
+        
+
+    </body>
+</html>
+		
